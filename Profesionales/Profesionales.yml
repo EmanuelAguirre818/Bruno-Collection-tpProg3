@@ -1,0 +1,26 @@
+info:
+  name: Profesionales
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: http://localhost:3000/cuentas/registroProfesional
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "Prueba profesional2",
+        "apellido": "Prueba",
+        "telefono": "12342",
+        "email": "profesional12@example.com",
+        "password": "4321"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false

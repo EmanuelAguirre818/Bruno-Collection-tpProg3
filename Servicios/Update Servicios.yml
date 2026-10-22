@@ -1,0 +1,26 @@
+info:
+  name: Update Servicios
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: http://localhost:3000/servicios/:id
+  params:
+    - name: id
+      value: 1wwww
+      type: path
+  body:
+    type: json
+    data: |-
+      {
+        "nombre": "prueba put2"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
