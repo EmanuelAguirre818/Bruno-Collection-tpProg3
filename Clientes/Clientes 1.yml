@@ -10,11 +10,11 @@ http:
     type: json
     data: |
       {
-        "nombre": "usuario con hash y salt",
+        "nombre": "prueba",
         "apellido": "prueba",
         "dni": "0987654321111",
         "telefono": "0987654232212",
-        "email": "prueba2223@example.com",
+        "email": "prueba@example.com",
         "password": "4321"
       }
   auth: inherit
